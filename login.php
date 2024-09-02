@@ -14,7 +14,7 @@ if (isset($_SESSION['attempt_again'])) {
     }
 }
 
-
+// To clear the previous session
 if (isset($_SESSION['email'])) {
     // Unset all session variables
     session_unset();
