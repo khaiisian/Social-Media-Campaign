@@ -23,6 +23,7 @@ if (isset($_SESSION['email'])) {
     session_destroy();
 }
 
+// To login automatically with the previous sessin
 // if (isset($_SESSION['utype'])) {
 //     if ($_SESSION['utype'] == 0) {
 //         header('location:home.php');
