@@ -56,9 +56,6 @@ if (isset($_POST["btnSearch"])) {
 </head>
 
 <body>
-    <?php
-    echo $email;
-    ?>
     <nav>
         <div class="nav_bar">
             <div class="logo">
@@ -110,314 +107,314 @@ if (isset($_POST["btnSearch"])) {
             if (!isset($_POST['btnSearch']) or (isset($_POST['btnSearch']) and $search == "")) {
                 ?>
 
-                <div class="slider">
-                    <div class="slides">
-                        <div id="slide-1">
-                            <img src="images/welcome.jpg" alt="image of slide 1" class="slide-1_img">
-                        </div>
-                        <div id="slide-2">
-                            <img src="images/1030_Facebook_teens_main.jpg" alt="image of slide 2" class="slide-2_img">
-
-                        </div>
-                        <div id="slide-3">
-                            <img src="images/CyberBullyingReal-Whatyoucando.jpg" alt="image of slide 3" class="slide-3_img">
-
-                        </div>
-                        <div id="slide-4">
-                            <img src="images/SM-Privacy.jpg" alt="image of slide 4" class="slide-4_img">
-
-                        </div>
-                        <div id="slide-5">
-                            <img src="images/Parents.gif" alt="image of slide 5" class="slide-5_img">
-                        </div>
-                        <div id="slide-6">
-                            <img src="images/maxresdefault.jpg" alt="image of slide 1" class="slide-1_img">
-                        </div>
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide-1">
+                        <img src="images/welcome.jpg" alt="image of slide 1" class="slide-1_img">
                     </div>
-                    <a href="#slide-1">1</a>
-                    <a href="#slide-2">2</a>
-                    <a href="#slide-3">3</a>
-                    <a href="#slide-4">4</a>
-                    <a href="#slide-5">5</a>
-                    <a href="#slide-6">6</a>
-                </div>
+                    <div id="slide-2">
+                        <img src="images/1030_Facebook_teens_main.jpg" alt="image of slide 2" class="slide-2_img">
 
-                <div class="HomeParent" id="HomeParent">
-                    <div class="hParent_content">
-                        <h2>Inspiring Parents to Provide Support for Their Teenagers' Utilizing Social Media</h2>
-                        <p>In a world where social media is a big part of teens' lives, parents need to take the initiative
-                            to teach their kids how to behave responsibly and safely online. Here are some pointers and
-                            techniques to assist you in helping your teenagers securely navigate the digital world.</p>
-                        <div>
-                            <p><a href="parents-hlep.php">Learn More</a></p>
-                        </div>
                     </div>
-                    <div class="hParent_img">
-                        <img src="images/R.png" alt="">
+                    <div id="slide-3">
+                        <img src="images/CyberBullyingReal-Whatyoucando.jpg" alt="image of slide 3" class="slide-3_img">
+
+                    </div>
+                    <div id="slide-4">
+                        <img src="images/SM-Privacy.jpg" alt="image of slide 4" class="slide-4_img">
+
+                    </div>
+                    <div id="slide-5">
+                        <img src="images/Parents.gif" alt="image of slide 5" class="slide-5_img">
+                    </div>
+                    <div id="slide-6">
+                        <img src="images/maxresdefault.jpg" alt="image of slide 1" class="slide-1_img">
                     </div>
                 </div>
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+                <a href="#slide-6">6</a>
+            </div>
 
-                <div class="home_services">
-                    <div class="S-intro">
-                        <div>
-                            <!-- <img src="images/services.jpg" alt=""> -->
-                            <h1>Discover Our Services</h1>
-                            <p>Introduction to services in our website to discover
-                                vital advice for securely navigating the digital world, comprehend possible hazards, and
-                                remain
-                                up to date on the newest trends and social media use best practices. Come along with us as
-                                we
-                                work to make the internet a safer place for everyone..</p>
-                        </div>
+            <div class="HomeParent" id="HomeParent">
+                <div class="hParent_content">
+                    <h2>Inspiring Parents to Provide Support for Their Teenagers' Utilizing Social Media</h2>
+                    <p>In a world where social media is a big part of teens' lives, parents need to take the initiative
+                        to teach their kids how to behave responsibly and safely online. Here are some pointers and
+                        techniques to assist you in helping your teenagers securely navigate the digital world.</p>
+                    <div>
+                        <p><a href="parents-hlep.php">Learn More</a></p>
                     </div>
-                    <div class="S-content">
-                        <?php
+                </div>
+                <div class="hParent_img">
+                    <img src="images/R.png" alt="">
+                </div>
+            </div>
+
+            <div class="home_services">
+                <div class="S-intro">
+                    <div>
+                        <!-- <img src="images/services.jpg" alt=""> -->
+                        <h1>Discover Our Services</h1>
+                        <p>Introduction to services in our website to discover
+                            vital advice for securely navigating the digital world, comprehend possible hazards, and
+                            remain
+                            up to date on the newest trends and social media use best practices. Come along with us as
+                            we
+                            work to make the internet a safer place for everyone..</p>
+                    </div>
+                </div>
+                <div class="S-content">
+                    <?php
                         if ($resService->num_rows > 0) {
                             while ($rowSer = $resService->fetch_assoc()) {
                                 ?>
-                                <!--  Service 1 -->
-                                <div class="web-service">
-                                    <h3><?php echo $rowSer['title']; ?></h3>
-                                    <h4><?php echo $rowSer['description']; ?></h4>
-                                    <p><?php echo $rowSer['info']; ?> </p>
-                                    <p><strong><?php echo $rowSer['createdat']; ?></strong></p>
-                                    <p><a href="#">Register Now</a></p>
-                                </div>
-                                <?php
+                    <!--  Service 1 -->
+                    <div class="web-service">
+                        <h3><?php echo $rowSer['title']; ?></h3>
+                        <h4><?php echo $rowSer['description']; ?></h4>
+                        <p><?php echo $rowSer['info']; ?> </p>
+                        <p><strong><?php echo $rowSer['createdat']; ?></strong></p>
+                        <p><a href="#">Register Now</a></p>
+                    </div>
+                    <?php
                             }
                         }
                         ?>
-                    </div>
                 </div>
+            </div>
 
-                <div class="home_socailMediaApps">
-                    <div class="home_appsContent">
-                        <h2>Some Porpular Social Media Apps</h2>
-                        <p>Social media, which provides a variety of channels for communication, entertainment, and
-                            information exchange, has become an essential component of everyday life. A few of the most
-                            widely used social media applications are listed below.</p>
-                    </div>
-                    <div class="home_appsIcon">
-                        <div class="icon_upper">
-                            <div class="home_apps">
-                                <div class="icon_frame">
-                                    <img src="images/fb_icon.png" alt="">
-                                    <p><a href="">Facebook</a></p>
-                                </div>
-                            </div>
-                            <div class="home_apps">
-                                <div class="icon_frame">
-                                    <img src="images/ig_icon.png" alt="">
-                                    <p><a href="">Instagram</a></p>
-                                </div>
-                            </div>
-                            <div class="home_apps">
-                                <div class="icon_frame">
-                                    <img src="images/youtube.png" alt="">
-                                    <p><a href="">YouTube</a></p>
-                                </div>
+            <div class="home_socailMediaApps">
+                <div class="home_appsContent">
+                    <h2>Some Porpular Social Media Apps</h2>
+                    <p>Social media, which provides a variety of channels for communication, entertainment, and
+                        information exchange, has become an essential component of everyday life. A few of the most
+                        widely used social media applications are listed below.</p>
+                </div>
+                <div class="home_appsIcon">
+                    <div class="icon_upper">
+                        <div class="home_apps">
+                            <div class="icon_frame">
+                                <img src="images/fb_icon.png" alt="">
+                                <p><a href="">Facebook</a></p>
                             </div>
                         </div>
-                        <div class="icon_lower"></div>
+                        <div class="home_apps">
+                            <div class="icon_frame">
+                                <img src="images/ig_icon.png" alt="">
+                                <p><a href="">Instagram</a></p>
+                            </div>
+                        </div>
+                        <div class="home_apps">
+                            <div class="icon_frame">
+                                <img src="images/youtube.png" alt="">
+                                <p><a href="">YouTube</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home_appsBlog"></div>
+                    <div class="icon_lower"></div>
                 </div>
+                <div class="home_appsBlog"></div>
+            </div>
 
-                <div class="teen_brain">
-                    <div class="impact_brain">
-                        <h1>Impact of Social Media On Teens' Brain</h1>
-                        <ul>
-                            <li>Increased digital screen time may be associated with a number of issues, including disturbed
-                                sleep, elevated stress levels, body dysmorphic disorders, and worse mood regulation,
-                                according to research.</li>
-                            <li>Kids who spend too much time on social media and digital applications may not be developing
-                                their brains as normally as kids who play outside, play sports, and interact with other kids
-                                in the real, non-virtual world. </li>
-                            <li>The light that digital devices shine into the eyes of young people using social media might
-                                have another detrimental direct consequence. Our brains are influenced by light to produce
-                                hormones that indicate daylight. Excessive exposure to blue screen light throughout the
-                                night might interfere with sleep cycles and circadian rhythms.</li>
-                        </ul>
-                    </div>
-                    <img src="images/teen_brain.jpg" alt="" class="brain_image">
+            <div class="teen_brain">
+                <div class="impact_brain">
+                    <h1>Impact of Social Media On Teens' Brain</h1>
+                    <ul>
+                        <li>Increased digital screen time may be associated with a number of issues, including disturbed
+                            sleep, elevated stress levels, body dysmorphic disorders, and worse mood regulation,
+                            according to research.</li>
+                        <li>Kids who spend too much time on social media and digital applications may not be developing
+                            their brains as normally as kids who play outside, play sports, and interact with other kids
+                            in the real, non-virtual world. </li>
+                        <li>The light that digital devices shine into the eyes of young people using social media might
+                            have another detrimental direct consequence. Our brains are influenced by light to produce
+                            hormones that indicate daylight. Excessive exposure to blue screen light throughout the
+                            night might interfere with sleep cycles and circadian rhythms.</li>
+                    </ul>
                 </div>
+                <img src="images/teen_brain.jpg" alt="" class="brain_image">
+            </div>
 
-                <div class="stay_safe_online">
-                    <div class="sso_img" id="sso_img">
-                        <img src="images/HTSFO.jpg" alt="">
-                    </div>
-                    <div id="sso_content" class="sso_content">
-                        <h2>How to Stay Safe Online</h2>
-                        <ul>
-                            <li>Give each of your accounts a strong, one-of-a-kind password.</li>
-                            <li>To add an extra layer of protection, enable two-factor authentication on each account.</li>
-                            <li>Attachments and links in emails and texts should be used with caution.</li>
-                            <li>Maintain frequent updates for your browser, operating system, and apps.</li>
-                            <li>Make sure you have up-to-date, dependable antivirus and anti-malware software.</li>
-                            <li>Use encryption and strong passwords to secure your Wi-Fi network.</li>
-                        </ul>
-                    </div>
+            <div class="stay_safe_online">
+                <div class="sso_img" id="sso_img">
+                    <img src="images/HTSFO.jpg" alt="">
                 </div>
+                <div id="sso_content" class="sso_content">
+                    <h2>How to Stay Safe Online</h2>
+                    <ul>
+                        <li>Give each of your accounts a strong, one-of-a-kind password.</li>
+                        <li>To add an extra layer of protection, enable two-factor authentication on each account.</li>
+                        <li>Attachments and links in emails and texts should be used with caution.</li>
+                        <li>Maintain frequent updates for your browser, operating system, and apps.</li>
+                        <li>Make sure you have up-to-date, dependable antivirus and anti-malware software.</li>
+                        <li>Use encryption and strong passwords to secure your Wi-Fi network.</li>
+                    </ul>
+                </div>
+            </div>
 
-                <section id="subOrNot">
-                    <?php
+            <section id="subOrNot">
+                <?php
                     if ($sub == 1) {
                         ?>
-                        <!-- <h1>Newsletter</h1> -->
-                        <h1>Newsletter</h1>
-                        <div class="newsLetterSection">
-                            <?php
+                <!-- <h1>Newsletter</h1> -->
+                <h1>Newsletter</h1>
+                <div class="newsLetterSection">
+                    <?php
                             if ($resNews->num_rows > 0) {
                                 while ($rowNews = $resNews->fetch_assoc()) {
                                     ?>
-                                    <!--  Service 1 -->
-                                    <div class="newsLetterContent" id="newsLetterContent">
-                                        <div class="newsletter_img">
+                    <!--  Service 1 -->
+                    <div class="newsLetterContent" id="newsLetterContent">
+                        <div class="newsletter_img">
 
-                                            <img src="<?php echo "images\\" . $rowNews['image']; ?>">
-                                        </div>
-                                        <div class="newsletter_txt">
-                                            <h3><?php echo $rowNews['title']; ?></h3>
-                                            <p class="news_date"><strong><?php echo $rowNews['publishdate']; ?></strong></p>
-                                            <p>
-                                                <?php echo $rowNews['content']; ?>
-                                            </p>
-                                        </div>
+                            <img src="<?php echo "images\\" . $rowNews['image']; ?>">
+                        </div>
+                        <div class="newsletter_txt">
+                            <h3><?php echo $rowNews['title']; ?></h3>
+                            <p class="news_date"><strong><?php echo $rowNews['publishdate']; ?></strong></p>
+                            <p>
+                                <?php echo $rowNews['content']; ?>
+                            </p>
+                        </div>
 
-                                    </div>
-                                    <?php
+                    </div>
+                    <?php
                                 }
                             } ?>
 
-                        </div>
-                        <?php
+                </div>
+                <?php
                     } else {
                         ?>
-                        <!-- Contact Form -->
-                        <div class="sub_form">
-                            <h2>Subscribe to Our Newsletter for <span>Exclusive Updates!</span></h2>
-                            <form action="#" method="POST">
-                                <!-- <label for="">Newsletter Subscription:</label> -->
-                                <div class="inpt_form">
-                                    <div>
-                                        <input type="radio" id="yes" class="radio_" name="sub" value="1" required />
-                                        <label for="yes" class="lbl_sub">Yes
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="no" class="radio_" name="sub" value="0" required />
-                                        <label for="no" class="lbl_sub">No</label>
-                                    </div>
-                                </div>
-                                <button type="submit" name="btnSub">Subscribe</button>
-                            </form>
+                <!-- Contact Form -->
+                <div class="sub_form">
+                    <h2>Subscribe to Our Newsletter for <span>Exclusive Updates!</span></h2>
+                    <form action="#" method="POST">
+                        <!-- <label for="">Newsletter Subscription:</label> -->
+                        <div class="inpt_form">
+                            <div>
+                                <input type="radio" id="yes" class="radio_" name="sub" value="1" required />
+                                <label for="yes" class="lbl_sub">Yes
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="no" class="radio_" name="sub" value="0" required />
+                                <label for="no" class="lbl_sub">No</label>
+                            </div>
                         </div>
+                        <button type="submit" name="btnSub">Subscribe</button>
+                    </form>
+                </div>
 
-                    <?php }
+                <?php }
                     ?>
 
-                </section>
+            </section>
 
-                <?php
+            <?php
             } elseif (isset($_POST['btnSearch']) and $search != "") {
                 ?>
 
-                <?php
+            <?php
 
                 if ($ssresult->num_rows > 0) { ?>
-                    <div class="home_services">
-                        <div class="S-intro">
-                            <div>
-                                <!-- <img src="images/services.jpg" alt=""> -->
-                                <h1>Discover Our Services</h1>
-                                <p>Introduction to services in our website to discover
-                                    vital advice for securely navigating the digital world, comprehend possible hazards, and
-                                    remain
-                                    up to date on the newest trends and social media use best practices. Come along with us as
-                                    we
-                                    work to make the internet a safer place for everyone..</p>
-                            </div>
-                        </div>
-                        <div class="S-content">
-                            <?php
+            <div class="home_services">
+                <div class="S-intro">
+                    <div>
+                        <!-- <img src="images/services.jpg" alt=""> -->
+                        <h1>Discover Our Services</h1>
+                        <p>Introduction to services in our website to discover
+                            vital advice for securely navigating the digital world, comprehend possible hazards, and
+                            remain
+                            up to date on the newest trends and social media use best practices. Come along with us as
+                            we
+                            work to make the internet a safer place for everyone..</p>
+                    </div>
+                </div>
+                <div class="S-content">
+                    <?php
                             while ($rowSer = $ssresult->fetch_assoc()) {
                                 ?>
-                                <!--  Service 1 -->
-                                <div class="web-service">
-                                    <h3><?php echo $rowSer['title']; ?></h3>
-                                    <h4><?php echo $rowSer['description']; ?></h4>
-                                    <p><?php echo $rowSer['info']; ?> </p>
-                                    <p><strong><?php echo $rowSer['createdat']; ?></strong></p>
-                                    <p><a href="#">Register Now</a></p>
-                                </div>
-                                <?php
+                    <!--  Service 1 -->
+                    <div class="web-service">
+                        <h3><?php echo $rowSer['title']; ?></h3>
+                        <h4><?php echo $rowSer['description']; ?></h4>
+                        <p><?php echo $rowSer['info']; ?> </p>
+                        <p><strong><?php echo $rowSer['createdat']; ?></strong></p>
+                        <p><a href="#">Register Now</a></p>
+                    </div>
+                    <?php
                             }
                 }
                 ?>
-                    </div>
                 </div>
+            </div>
 
-                <section id="subOrNot">
-                    <?php
+            <section id="subOrNot">
+                <?php
                     if ($sub == 1) {
                         ?>
-                        <?php
+                <?php
                         if ($snresult->num_rows > 0) { ?>
-                            <!-- <h1>Newsletter</h1> -->
-                            <h1>Latest News</h1>
-                            <div class="newsLetterSection">
-                                <?php
+                <!-- <h1>Newsletter</h1> -->
+                <h1>Latest News</h1>
+                <div class="newsLetterSection">
+                    <?php
                                 while ($rowNews = $snresult->fetch_assoc()) {
                                     ?>
-                                    <!--  Service 1 -->
-                                    <div class="newsLetterContent" id="newsLetterContent">
-                                        <div class="newsletter_img">
+                    <!--  Service 1 -->
+                    <div class="newsLetterContent" id="newsLetterContent">
+                        <div class="newsletter_img">
 
-                                            <img src="<?php echo "images\\" . $rowNews['image']; ?>">
-                                        </div>
-                                        <div class="newsletter_txt">
-                                            <h3><?php echo $rowNews['title']; ?></h3>
-                                            <p class="news_date"><strong><?php echo $rowNews['publishdate']; ?></strong></p>
-                                            <p>
-                                                <?php echo $rowNews['content']; ?>
-                                            </p>
-                                        </div>
+                            <img src="<?php echo "images\\" . $rowNews['image']; ?>">
+                        </div>
+                        <div class="newsletter_txt">
+                            <h3><?php echo $rowNews['title']; ?></h3>
+                            <p class="news_date"><strong><?php echo $rowNews['publishdate']; ?></strong></p>
+                            <p>
+                                <?php echo $rowNews['content']; ?>
+                            </p>
+                        </div>
 
-                                    </div>
-                                    <?php
+                    </div>
+                    <?php
                                 }
                         } ?>
 
-                        </div>
-                        <?php
+                </div>
+                <?php
                     } else {
                         ?>
-                        <!-- Contact Form -->
-                        <div class="sub_form">
-                            <h2>Subscribe to Our Newsletter for <span>Exclusive Updates!</span></h2>
-                            <form action="#" method="POST">
-                                <!-- <label for="">Newsletter Subscription:</label> -->
-                                <div class="inpt_form">
-                                    <div>
-                                        <input type="radio" id="yes" class="radio_" name="sub" value="1" required />
-                                        <label for="yes" class="lbl_sub">Yes
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="no" class="radio_" name="sub" value="0" required />
-                                        <label for="no" class="lbl_sub">No</label>
-                                    </div>
-                                </div>
-                                <button type="submit" name="btnSub">Subscribe</button>
-                            </form>
+                <!-- Contact Form -->
+                <div class="sub_form">
+                    <h2>Subscribe to Our Newsletter for <span>Exclusive Updates!</span></h2>
+                    <form action="#" method="POST">
+                        <!-- <label for="">Newsletter Subscription:</label> -->
+                        <div class="inpt_form">
+                            <div>
+                                <input type="radio" id="yes" class="radio_" name="sub" value="1" required />
+                                <label for="yes" class="lbl_sub">Yes
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="no" class="radio_" name="sub" value="0" required />
+                                <label for="no" class="lbl_sub">No</label>
+                            </div>
                         </div>
+                        <button type="submit" name="btnSub">Subscribe</button>
+                    </form>
+                </div>
 
-                    <?php }
+                <?php }
                     ?>
 
-                </section>
+            </section>
 
-                <?php
+            <?php
             }
             ?>
 

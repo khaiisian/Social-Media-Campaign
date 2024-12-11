@@ -56,9 +56,6 @@ if ($result5->num_rows > 0) {
 </head>
 
 <body>
-    <?php
-    echo $email;
-    ?>
     <nav class="admin_nav">
         <ul>
             <div class="logo">
